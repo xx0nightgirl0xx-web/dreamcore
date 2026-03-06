@@ -1,0 +1,25 @@
+{
+  "name": "dreamcore-ps1",
+  "version": "1.0.0",
+  "description": "Dreamcore PS1 Edition - 3D Game",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build-win": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.dreamcore.ps1",
+    "productName": "Dreamcore PS1",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
